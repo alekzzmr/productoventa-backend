@@ -35,7 +35,6 @@ public class VentaController {
 		
 		return new ResponseEntity<List<Venta>>(venta, HttpStatus.OK);
 	}
-	
 	@GetMapping("/{id}")
 	public ResponseEntity<Venta> buscarPorId(@PathVariable Integer id) throws Exception{
 		Venta venta = service.buscarPorId(id);
